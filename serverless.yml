@@ -1,0 +1,13 @@
+service: farm
+frameworkVersion: 3
+configValidationMode: warn
+useDotenv: true
+
+# resources:
+#   -
+
+custom: ${file(serverless/custom.yml):custom}
+plugins: ${file(serverless/plugins.yml):plugins}
+provider: ${file(serverless/provider.yml):provider}
+functions: ${file(serverless/functions.yml):functions}
+package: ${file(serverless/package.yml):package}
