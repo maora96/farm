@@ -1,0 +1,200 @@
+functions:
+  CreateCompany:
+    handler: dist/handlers/company/create.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: POST
+          path: /company
+          private: false
+
+  EditCompany:
+    handler: dist/handlers/company/edit.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: PUT
+          path: /company
+          private: false
+
+  DeleteCompany:
+    handler: dist/handlers/company/delete-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: DELETE
+          path: /company
+          private: false
+
+  GetCompany:
+    handler: dist/handlers/company/get-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /company/single
+          private: false
+
+  GetCompanies:
+    handler: dist/handlers/company/get.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /company
+          private: false
+
+  CreateUser:
+    handler: dist/handlers/user/create.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: POST
+          path: /user
+          private: false
+
+  EditUser:
+    handler: dist/handlers/user/edit.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: PUT
+          path: /user
+          private: false
+
+  DeleteUser:
+    handler: dist/handlers/company/delete-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: DELETE
+          path: /user
+          private: false
+
+  GetUser:
+    handler: dist/handlers/user/get-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /user/single
+          private: false
+
+  GetUsers:
+    handler: dist/handlers/user/get.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /user
+          private: false
+
+  CreateOrder:
+    handler: dist/handlers/order/create.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: POST
+          path: /order
+          private: false
+
+  EditOrder:
+    handler: dist/handlers/order/edit.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: PUT
+          path: /order
+          private: false
+
+  DeleteOrder:
+    handler: dist/handlers/order/delete-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: DELETE
+          path: /order
+          private: false
+
+  GetOrder:
+    handler: dist/handlers/order/get-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /order/single
+          private: false
+
+  GetOrders:
+    handler: dist/handlers/order/get.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /order
+          private: false
+
+  CreateProduct:
+    handler: dist/handlers/product/create.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: POST
+          path: /product
+          private: false
+
+  EditProduct:
+    handler: dist/handlers/product/edit.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: PUT
+          path: /product
+          private: false
+
+  DeleteProduct:
+    handler: dist/handlers/product/delete-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: DELETE
+          path: /product
+          private: false
+
+  GetProduct:
+    handler: dist/handlers/product/get-by-id.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /product/single
+          private: false
+
+  GetProducts:
+    handler: dist/handlers/product/get.handler
+    timeout: 30
+    memorySize: 448
+    events:
+      - http:
+          method: GET
+          path: /product
+          private: false

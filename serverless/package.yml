@@ -1,0 +1,8 @@
+package:
+  excludeDevDependencies: true
+  include:
+    - dist/**
+  exclude:
+    - .serverless/**
+    - .env*
+    - .git

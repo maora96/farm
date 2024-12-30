@@ -1,0 +1,9 @@
+custom:
+  defaultStage: hml
+  serverless-offline:
+    allowCache: true
+    useChildProcesses: true
+  prune:
+    automatic: true
+    number: 3
+  logRetentionInDays: 14
